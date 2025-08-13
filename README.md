@@ -1,7 +1,7 @@
 ## Hi there, I'm ivblz 👋
 
 <a href="https://ivblz.github.io/ivblz/terminal.html">
-  <img src="terminal.png" width="455">
+  <img src="terminal.png" width="465">
 </a>
 
 ### My GitHub Stats
