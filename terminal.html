@@ -1,31 +1,118 @@
-<div align="center">
-    <div style="background-color:#282a36; width:465px; height:280px; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1); padding:20px; font-family:Consolas,monospace; color:#f8f8f2; text-align:left; overflow:auto;">
-      <div style="display:flex; justify-content:space-between; align-items:center; background-color:#44475a; padding:5px 10px; border-top-left-radius:10px; border-top-right-radius:10px; color:#f8f8f2; margin:-20px -20px 20px -20px;">
-        <div style="display:flex; gap:8px;">
-          <span style="width:12px; height:12px; border-radius:100%; background-color:#ff5555;"></span>
-          <span style="width:12px; height:12px; border-radius:100%; background-color:#FFD700;"></span>
-          <span style="width:12px; height:12px; border-radius:100%; background-color:#32CD32;"></span>
+<html>
+  <head>
+    <title>ivblz GitHub Profile</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Consolas', monospace;
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+      }
+
+      @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      .terminal {
+        background-color: #282a36;
+        width: 465px;
+        height: 280px;
+        border-radius: 10px;
+        box-shadow: 
+          0 20px 50px rgba(0, 0, 0, 0.3),
+          0 10px 30px rgba(0, 0, 0, 0.2),
+          0 0 40px rgba(128, 0, 128, 0.1),
+          inset 0 0 20px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        font-family: Consolas, monospace;
+        color: #f8f8f2;
+        text-align: left;
+        overflow: auto;
+        position: relative;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #44475a;
+        padding: 5px 10px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        color: #f8f8f2;
+        margin: -20px -20px 20px -20px;
+      }
+
+      .status-indicators {
+        display: flex;
+        gap: 8px;
+      }
+
+      .mac-btn {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.2s ease;
+        background: none;
+        padding: 0;
+      }
+
+      .close-btn { background-color: #ff5f56; }
+      .minimize-btn { background-color: #ffbd2e; }
+      .maximize-btn { background-color: #27c93f; }
+
+      .mac-btn:active { filter: brightness(1.6); }
+
+      .username {
+        text-align: center;
+        flex-grow: 1;
+        font-size: 15px;
+      }
+
+      .output-line { color: #ff79c6; }
+      .separator { color: #6a6a6a; }
+      .content { color: #f8f8f2; }
+    </style>
+  </head>
+  <body>
+    <div class="terminal">
+      <div class="top-bar">
+        <div class="status-indicators">
+          <button class="mac-btn close-btn" aria-label="Close"></button>
+          <button class="mac-btn minimize-btn" aria-label="Minimize"></button>
+          <button class="mac-btn maximize-btn" aria-label="Maximize"></button>
         </div>
-        <div style="text-align:center; flex-grow:1; font-size:15px;">ivblz@MacBook-Pro-Ivan:~</div>
+        <div class="username">ivblz@MacBook-Pro-Ivan:~</div>
       </div>
 
-      <div><span style="color:#ff79c6;">Last login: date hour:min:sec on tty</span></div>
-
-      <div style="color:#6a6a6a;">------------------------------------------------</div>
-      <div><span style="color:#ff79c6;">~ » i'm</span></div>
-      <div>ivblz (ivan)</div>
+      <div class="output-line">Last login: date hour:min:sec on tty</div>
+      <div class="separator">------------------------------------------------</div>
+      <div><span class="output-line">~ » i'm</span></div>
+      <div class="content">ivblz (ivan)</div>
       
-      <div style="color:#6a6a6a;">------------------------------------------------</div>
-      <div><span style="color:#ff79c6;">~ » about</span></div>
-      <div>Developer, DataScientist, Administrator, InfoSec</div>
+      <div class="separator">------------------------------------------------</div>
+      <div><span class="output-line">~ » about</span></div>
+      <div class="content">Developer, DataScientist, Administrator, InfoSec</div>
       
-      <div style="color:#6a6a6a;">------------------------------------------------</div>
-      <div><span style="color:#ff79c6;">~ » os</span></div>
-      <div>MacOS, Windowns, Linux, Android</div>
+      <div class="separator">------------------------------------------------</div>
+      <div><span class="output-line">~ » os</span></div>
+      <div class="content">MacOS, Windowns, Linux, Android</div>
 
-      <div style="color:#6a6a6a;">------------------------------------------------</div>
-      <div><span style="color:#ff79c6;">~ » status</span></div>
-      <div>Active Developer 🚀</div>
-  
+      <div class="separator">------------------------------------------------</div>
+      <div><span class="output-line">~ » status</span></div>
+      <div class="content">Active Developer 🚀</div>
     </div>
-  </div>
+  </body>
+</html>
