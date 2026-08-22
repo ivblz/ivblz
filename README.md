@@ -1,6 +1,7 @@
 ## Hi there, I'm ivblz 👋
 
-***U can check my <a href="https://ivblz.me">website</a>***
+**U can check my <a href="https://ivblz.me">website</a>**
+
 <a href="https://ivblz.github.io/ivblz/terminal.html">
   <img src="terminal.png" width="465">
 </a>
